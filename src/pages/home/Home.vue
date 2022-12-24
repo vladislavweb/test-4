@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import NoteForm from "@/pages/home/NoteForm.vue";
-import NoteList from "@/pages/home/NoteList.vue";
+import NoteForm from "@/pages/home/NoteForm";
+import NoteList from "@/pages/home/NoteList";
 
 export default {
   components: {
