@@ -9,7 +9,7 @@
       class="create-note-form__title-input"
       name="note-title"
       id="noteTitle"
-      type="text"
+      required
     />
 
     <p>Описание</p>
@@ -20,6 +20,7 @@
       name="note-description"
       id="noteDescription"
       rows="5"
+      required
     />
 
     <custom-button class="create-note-form__submit-button" type="submit" fillType="filled">
