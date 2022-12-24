@@ -56,7 +56,6 @@ export default {
 
 <style lang="scss" scoped>
 .note-list {
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 32%);
   row-gap: 4%;
@@ -74,7 +73,7 @@ export default {
   .note-list__element {
     padding: 16px;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr;
     border: 1px solid gray;
     border-radius: 4px;
 
