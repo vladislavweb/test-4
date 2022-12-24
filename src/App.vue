@@ -30,3 +30,28 @@ body {
   }
 }
 </style>
+
+<script>
+import { toRaw } from "vue";
+import { useStore } from "vuex";
+
+export default {
+  setup() {
+    const store = useStore();
+
+    store.subscribe((mutation, state) => {
+      if (mutation.type === "addNote" || mutation.type === "deleteNote") {
+        localStorage.setItem("notes", JSON.stringify(toRaw(state).notes));
+      }
+    });
+
+    return {
+      store,
+    };
+  },
+
+  mounted() {
+    this.store.commit("loadNotes");
+  },
+};
+</script>
