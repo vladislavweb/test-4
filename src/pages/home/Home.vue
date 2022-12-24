@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  height: 100%;
   display: flex;
 
   @media only screen and (max-width: 600px) {
@@ -47,6 +48,11 @@ export default {
 
   .home__list-wrapper {
     flex: 1;
+    overflow-y: auto;
+
+    @media only screen and (max-width: 600px) {
+      overflow: inherit;
+    }
   }
 }
 </style>

@@ -56,6 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .note-list {
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 32%);
   row-gap: 4%;
@@ -93,6 +94,7 @@ export default {
         height: 30px;
         display: flex;
         justify-content: space-between;
+        align-self: flex-end;
 
         .delete-button {
           color: red;
