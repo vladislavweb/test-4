@@ -73,7 +73,7 @@ export default {
   .note-list__element {
     padding: 16px;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: min-content;
     border: 1px solid gray;
     border-radius: 4px;
 
